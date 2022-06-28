@@ -1,0 +1,19 @@
+<span *ngFor="let users of user; let index = index">
+  <li *ngIf="user[index].id % 2">
+    <div class="background" id="masquer">
+      <div class="card-header">
+        {{user[index + 1].company.name}}
+        <div class="card">
+          <div class="name">
+            {{user[index + 1].name}}
+          </div>
+          <div class="info">
+            <p>site : {{user[index + 1].website}}</p>
+            <p>Email : {{user[index + 1].email}}</p>
+            <p>Tel : {{user[index + 1].phone}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</span>
